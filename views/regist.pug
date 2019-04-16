@@ -1,0 +1,21 @@
+html
+    head
+        include head.pug
+    body
+        form(action="/index/")
+            .form-group
+                label(for='exampleInputEmail1') Nama
+                input#exampleInputNama1.form-control(type='Nama', aria-describedby='emailHelp', placeholder='Enter Nama')
+            .form-group
+                label(for='exampleInputPassword1') Address
+                input#exampleInputAddress1.form-control(type='Address', placeholder='Enter Address')
+            .form-group
+                label(for='exampleInputPassword1') Email Address
+                input#exampleInputEmail1.form-control(type='Email', placeholder='Enter Email')
+            .form-group
+                label(for='exampleInputPassword1') Password
+                input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+            .form-group.form-check
+                input#exampleCheck1.form-check-input(type='checkbox')
+                label.form-check-label(for='exampleCheck1') Check me out
+            button.btn.btn-primary(type='submit') Submit
